@@ -6,9 +6,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoComponent {
   heroes: string[] = ['Spiderman', 'American Capitain', 'Dr. Strange', "Scarlet Witch", "Vision", 'Hulk'];
-  heroeEliminado: string = "";
+  heroeEliminado: string[] = [];
+  status: boolean = false;
 
-  eliminarHeroe(){
-    this.heroeEliminado = this.heroes.shift() || '';
+  // eliminarHeroe(){
+  //   this.heroeEliminado = this.heroes.shift() || '';
+  // }
+  eliminarelemento(){
+    this.heroeEliminado = this.heroes.splice(-1,1);
+    this.heroes.length === 0 ?
+      this.status=false :
+      this.status=true;
   }
 }

@@ -1,10 +1,10 @@
 <h1>Listado de Heroes</h1>
 
-<div *ngIf="heroeEliminado !== '' ">
+<div *ngIf="status">
     <h3>Heroe borrado: <small>{{heroeEliminado}}</small> </h3>
 </div>
 
-<button (click)="eliminarHeroe()">Eliminar último</button>
+<button (click)="eliminarelemento()">Eliminar último</button>
 
 <ol>
     <li *ngFor="let heroe of heroes">
