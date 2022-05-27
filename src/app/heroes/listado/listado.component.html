@@ -1,8 +1,7 @@
 <h1>Listado de Heroes</h1>
 
-<div>
-    <h3>Heroe borrado</h3>
-    <span>{{heroeEliminado}}</span>
+<div *ngIf="heroeEliminado !== '' ">
+    <h3>Heroe borrado: <small>{{heroeEliminado}}</small> </h3>
 </div>
 
 <button (click)="eliminarHeroe()">Eliminar último</button>
