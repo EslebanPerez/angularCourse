@@ -1,11 +1,14 @@
 <h1>Listado de Heroes</h1>
 
+<div>
+    <h3>Heroe borrado</h3>
+    <span>{{heroeEliminado}}</span>
+</div>
+
+<button (click)="eliminarHeroe()">Eliminar último</button>
+
 <ol>
     <li *ngFor="let heroe of heroes">
          {{heroe}}
     </li>
 </ol>
-
-
-
-<button (click)="eliminarHeroe()">Eliminar último</button>

@@ -5,10 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './listado.component.html',
 })
 export class ListadoComponent {
-  heroes: string[] = ['Spiderman', 'American Capitain', 'Dr. Strange', "Scarlet Witch", "Vision"];
+  heroes: string[] = ['Spiderman', 'American Capitain', 'Dr. Strange', "Scarlet Witch", "Vision", 'Hulk'];
+  heroeEliminado: string[] = [];
 
   eliminarHeroe(){
     const eliminado = this.heroes.splice(-1,1);
     console.log(eliminado);
+    this.heroeEliminado = eliminado;
   }
 }
