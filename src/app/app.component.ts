@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   //  template: `<h1>Hola mundo</h1>`
 })
 export class AppComponent {
-  titulo: string = 'Contador APP';
-  numero: number = 10;
+  
+
 }
